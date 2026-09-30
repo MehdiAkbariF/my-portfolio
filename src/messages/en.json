@@ -1,0 +1,37 @@
+{
+  "common": {
+    "loading": "Loading",
+    "viewProject": "View project",
+    "back": "Back",
+    "close": "Close"
+  },
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "I design, I build, and I make experiences precise",
+    "subtitle": "Industrial platforms, B2B tools, and precise user experiences",
+    "swipeHint": "Tap any project to explore"
+  },
+  "about": {
+    "title": "About me",
+    "intro": "I'm Mehdi Akbari, designer & builder of digital products. Since 2019, I've been designing and building industrial platforms, B2B marketplaces, and SaaS tools.",
+    "quote": "A good product isn't one the user has to learn — it's one the user doesn't need to learn at all.",
+    "timelineTitle": "Career path"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "If you have a project you think I could help with, let's talk.",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "telegram": "Telegram"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "It seems this path doesn't exist or has been removed.",
+    "back": "Back to home"
+  }
+}

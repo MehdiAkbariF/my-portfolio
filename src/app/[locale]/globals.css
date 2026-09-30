@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --blue-400: #7BA3F5;
+    --blue-500: #5B8DEF;
+    --blue-600: #3F6FD1;
+
+    --ink-50: #F7F7F8;
+    --ink-100: #EFEFF1;
+    --ink-700: #2A2A2E;
+    --ink-800: #16161A;
+    --ink-900: #0A0A0B;
+    --ink-950: #050506;
+
+    --font-fa: var(--font-vazirmatn), system-ui, sans-serif;
+    --font-en: system-ui, -apple-system, sans-serif;
+
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .dark {
+    --surface-base: #0A0A0B;
+    --surface-elevated: #16161A;
+    --surface-overlay: #2A2A2E;
+    --text-primary: #F7F7F8;
+    --text-secondary: rgb(247 247 248 / 0.64);
+    --text-tertiary: rgb(247 247 248 / 0.40);
+    --border-subtle: rgb(247 247 248 / 0.08);
+    --border-strong: rgb(247 247 248 / 0.16);
+    --accent: #5B8DEF;
+    --accent-hover: #7BA3F5;
+  }
+
+  .light {
+    --surface-base: #F7F7F8;
+    --surface-elevated: #FFFFFF;
+    --surface-overlay: #EFEFF1;
+    --text-primary: #0A0A0B;
+    --text-secondary: rgb(10 10 11 / 0.64);
+    --text-tertiary: rgb(10 10 11 / 0.40);
+    --border-subtle: rgb(10 10 11 / 0.08);
+    --border-strong: rgb(10 10 11 / 0.16);
+    --accent: #3F6FD1;
+    --accent-hover: #5B8DEF;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    overscroll-behavior: none;
+  }
+
+  body {
+    background: var(--surface-base);
+    color: var(--text-primary);
+    font-family: var(--font-fa);
+    transition:
+      background-color 0.35s cubic-bezier(0.32, 0.72, 0, 1),
+      color 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  [dir='ltr'] body {
+    font-family: var(--font-en);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .safe-top {
+    padding-top: max(var(--safe-top), 1rem);
+  }
+  .safe-bottom {
+    padding-bottom: max(var(--safe-bottom), 1rem);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
